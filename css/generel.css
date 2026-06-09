@@ -1,0 +1,34 @@
+@font-face {
+  font-family: "Hanken Grotesk";
+  src: url("../fonts/Hanken_Grotesk/HankenGrotesk-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "InriaSerif";
+  src: url(../fonts/Inria_Serif/InriaSerif-Light.ttf);
+}
+.hero h1 {
+  font-family: "Hanken Grotesk", "InriaSerif";
+}
+
+body {
+  background-color: #fef9f5;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #e30613;
+}
+h1 {
+  font-size: clamp(4rem, 12vw, 8rem);
+}
+
+h2 {
+  font-size: clamp(2rem, 5vw, 4rem);
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+}

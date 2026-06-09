@@ -1,0 +1,211 @@
+/* HERO */
+
+.hero {
+  padding: 2rem;
+
+  overflow: hidden;
+}
+
+/* PORTFOLIO */
+
+.hero h1 {
+  margin: 0;
+
+  position: relative;
+
+  z-index: 3;
+}
+.hero h1 {
+  font-size: 8rem;
+  line-height: 0.8;
+  max-width: 100%;
+  word-break: break-all;
+}
+
+/* BILLEDE + GITTER */
+
+.hero-visual {
+  position: relative;
+
+  margin-top: -1rem;
+
+  display: flex;
+  justify-content: center;
+}
+
+/* GITTER */
+
+.grid-overlay {
+  position: absolute;
+
+  top: -40px;
+  bottom: -40px;
+
+  left: 80px;
+  right: -80px;
+
+  z-index: 2;
+
+  background-image: linear-gradient(to right, #e30613 1px, transparent 1px), linear-gradient(to bottom, #e30613 1px, transparent 1px);
+
+  background-size: 45px 45px;
+}
+
+/* BILLEDE */
+
+.hero-visual img {
+  max-width: 60%;
+
+  aspect-ratio: 4 / 5;
+
+  object-fit: cover;
+
+  position: relative;
+
+  z-index: 1;
+}
+.scroll-indicator {
+  display: flex;
+  flex-direction: column; /* gør at pilen kommer under teksten */
+  align-items: center; /* centrerer indholdet */
+  justify-content: center;
+
+  color: #e30613;
+  margin-top: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #000000;
+}
+
+.scroll-indicator p {
+  margin: 0;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+}
+
+.arrow {
+  font-size: 1.5rem;
+  margin-top: 0.3rem;
+}
+/* mockups */
+
+.doku {
+  position: relative;
+  width: 100%;
+  max-width: 430px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  display: block;
+}
+
+.computer-frame {
+  width: 100%;
+  display: block;
+  position: relative;
+  z-index: 2;
+}
+
+.mockup_video {
+  position: absolute;
+
+  /* hvor videoen ligger ift. billedet */
+  top: 5%;
+  left: 12%;
+
+  width: 76%;
+  height: 80%;
+
+  object-fit: cover;
+  z-index: 1;
+}
+
+.gridudvalgt {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #000000;
+}
+.udvalgtetemaer h2 {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.gridudvalgt p {
+  text-align: center;
+}
+.gridudvalgt h4 a {
+  text-decoration: none;
+  color: inherit;
+}
+.btn-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.design {
+  padding-bottom: 2rem;
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+
+  border: 1px solid #e30613;
+  color: #e30613;
+
+  text-decoration: none;
+  padding: 0.5rem 2rem;
+
+  text-transform: uppercase;
+  font-size: 0.8rem;
+
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #e30613;
+  color: white;
+}
+
+@media (min-width: 800px) {
+  .hero {
+    padding: 2rem;
+  }
+
+  .hero h1 {
+    font-size: clamp(6rem, 18vw, 15rem);
+
+    margin-bottom: -5rem;
+    z-index: 3;
+    letter-spacing: -0.06em;
+  }
+
+  .hero-visual {
+    justify-content: flex-end;
+
+    margin-top: 0;
+  }
+
+  .hero-visual img {
+    max-width: 280px;
+    transform: translateX(-50px);
+  }
+
+  .grid-overlay {
+    left: 200px;
+    right: -1px;
+
+    top: -60px;
+    bottom: -20px;
+
+    background-size: 60px 60px;
+  }
+  .gridudvalgt h3 {
+    align-self: center;
+  }
+
+  .design {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+}

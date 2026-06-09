@@ -1,0 +1,155 @@
+.minlearing {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #000000;
+}
+
+.tema {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #000000;
+}
+.skridt {
+  padding: 4rem 2rem;
+
+  background-image: linear-gradient(to right, #e30613 1px, transparent 1px), linear-gradient(to bottom, #e30613 1px, transparent 1px);
+
+  background-size: 60px 60px;
+}
+/* mockups */
+
+.doku {
+  position: relative;
+  width: 100%;
+  max-width: 430px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  display: block;
+}
+
+.computer-frame {
+  width: 100%;
+  display: block;
+  position: relative;
+  z-index: 2;
+}
+
+.mockup_video {
+  position: absolute;
+
+  /* hvor videoen ligger ift. billedet */
+  top: 5%;
+  left: 12%;
+
+  width: 76%;
+  height: 80%;
+
+  object-fit: cover;
+  z-index: 1;
+}
+.mobilwireframe {
+  width: 100%;
+  max-width: 430px; /* samme som .doku */
+  margin: 2rem auto 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.5rem;
+}
+
+.mobilwireframe img {
+  width: 100%;
+  display: block;
+}
+.processt03 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 430px;
+  width: 100%;
+  margin: 2rem auto 0;
+  gap: 0.5rem;
+}
+
+.processt03 div {
+  height: 220px;
+}
+
+.processt03 img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+.procest04 {
+  max-width: 430px;
+  width: 100%;
+  margin: 2rem auto 0;
+}
+.procest04 img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.processt05 {
+  display: grid;
+  grid-template-columns: 2.5fr 1fr;
+  max-width: 430px;
+  width: 100%;
+  margin: 2rem auto 0;
+  gap: 0.5rem;
+  align-items: start;
+}
+
+.processt05 img {
+  width: 100%;
+  display: block;
+}
+
+@media (min-width: 800px) {
+  .minlearing {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: end;
+  }
+  .minlearing p {
+    padding-bottom: 6rem;
+  }
+  .tema {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  .tema {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem 0;
+  }
+
+  /* Hver anden section bytter rundt */
+  .tema-grid section:nth-child(even) .tema > div:first-child {
+    grid-column: 2;
+  }
+
+  .tema-grid section:nth-child(even) .tema > div:last-child {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .skridt {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    min-height: 40vh;
+    padding: 6rem 2rem;
+  }
+
+  .skridt > div:first-child {
+    align-self: start;
+  }
+
+  .skridt > div:last-child {
+    align-self: end;
+  }
+  .doku {
+    max-width: 600px;
+    width: 100%;
+  }
+}

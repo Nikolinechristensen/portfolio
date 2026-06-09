@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forside</title>
+    <meta name="robots" content="noindex" />
+    <meta name="description" content="Forside, portfolio website om mig og hvad jeg har lært på første semester af multimediedesign" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/generel.css" />
+    <link rel="stylesheet" href="css/forside.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="icon" href="img/favicon.webp" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html">NIKOLINE CHRISTENSEN</a>
+      <div class="burger" id="burger" onclick="toggleMenu()">menu +</div>
+
+      <nav id="menu">
+        <ul>
+          <li><a href="index.html">FORSIDE</a></li>
+
+          <li>
+            <a href="ommig.html">OM MIG</a>
+            <ul class="submenu">
+              <li><a href="ommig.html#min-rejse">→ Min rejse</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="minlearing.html">MIN LÆRING</a>
+            <ul class="submenu">
+              <li><a href="minlearing.html#t02">→ T02 Web</a></li>
+              <li><a href="minlearing.html#t03">→ T03 UX/UI</a></li>
+              <li><a href="minlearing.html#t04">→ T04 Brugergrænseflader</a></li>
+              <li><a href="minlearing.html#t05">→ T05 Indhold</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <h1>PORTFOLIO</h1>
+
+        <div class="hero-visual">
+          <div class="grid-overlay"></div>
+
+          <img src="img/ommig-portrait.webp" alt="om mig billede" />
+        </div>
+      </section>
+      <div class="scroll-indicator">
+        <p>SCROLL</p>
+        <span class="arrow">↓</span>
+      </div>
+
+      <div class="udvalgtetemaer">
+        <h2>UDVALGTE PROJEKTER</h2>
+        <div class="gridudvalgt">
+          <div>
+            <div class="doku">
+              <video class="mockup_video" autoplay muted loop>
+                <source src="videomp4/video_T03.mp4" type="video/mp4" />
+              </video>
+              <img src="img/laptop.webp" alt="computer" class="computer-frame" />
+            </div>
+            <p>03 EMNESITE</p>
+
+            <div class="btn-wrapper">
+              <a class="btn" href="https://nikolinechristensen.github.io/keramik_emnesite_opgave/" target="_blank" rel="noopener noreferrer"> SE PROJEKT </a>
+            </div>
+          </div>
+          <div>
+            <div class="doku">
+              <video class="mockup_video" autoplay muted loop>
+                <source src="videomp4/video_T05.mp4" type="video/mp4" />
+              </video>
+              <img src="img/laptop.webp" alt="computer" class="computer-frame" />
+            </div>
+            <p>T05 VIRKSOMHEDSSITE</p>
+            <div class="btn-wrapper">
+              <a class="btn" href="https://vito-ek.github.io/virksomhedssite/" target="_blank" rel="noopener noreferrer"> SE PROJEKT </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="design">
+        <div>
+          <h2>DESIGN</h2>
+          <h2>KOMMUNIKATION</h2>
+          <h2>TEKNOLOGI</h2>
+        </div>
+        <div>
+          <p>Fra keramik og kreative processer til design, kommunikation og teknologi. Gennem portfolien kan du lære mig bedre at kende og følge min udvikling gennem 1. semester.</p>
+          <a href="ommig.html" class="btn">
+            <p>OM MIG</p>
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p class="footer-heading">TAK FOR BESØGET</p>
+
+      <p class="footer-text">Portfolio udviklet som dokumentation for min læring på første semester.</p>
+
+      <p class="footer-name">NIKOLINE CHRISTENSEN</p>
+
+      <a href="#top" class="footer-top"> ↗ TIL TOPPEN </a>
+
+      <script src="js/script.js"></script>
+    </footer>
+  </body>
+</html>

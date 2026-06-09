@@ -1,0 +1,137 @@
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  position: relative;
+  z-index: 1002;
+}
+
+header a {
+  color: #e30613;
+  text-decoration: none;
+}
+
+/* BURGER */
+.burger {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #e30613;
+  z-index: 1003;
+}
+
+/* MENU - MOBILE FIRST */
+#menu {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100dvh;
+
+  background: rgba(255, 250, 247, 0.78);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  padding: 85px 20px 40px;
+
+  opacity: 0;
+  transform: translateX(100%);
+  pointer-events: none;
+
+  transition:
+    transform 0.35s ease,
+    opacity 0.35s ease;
+
+  z-index: 1000;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#menu.active {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto;
+}
+
+#menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#menu > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+/* HOVEDLINKS */
+#menu > ul > li > a {
+  display: block;
+  color: #e30613;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  font-size: clamp(2.4rem, 13vw, 4.2rem);
+  line-height: 0.9;
+
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid #111;
+
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
+
+/* UNDERLINKS */
+.submenu {
+  margin-top: 0.6rem;
+  margin-left: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.submenu li {
+  border-bottom: 1px solid #111;
+}
+
+.submenu a {
+  display: block;
+  color: #111;
+  text-decoration: none;
+  font-size: 1.15rem;
+  padding: 0.75rem 0;
+}
+
+/* HOVER */
+#menu a:hover {
+  color: #e30613;
+  font-style: italic;
+}
+
+/* DESKTOP */
+@media (min-width: 800px) {
+  #menu {
+    left: auto;
+    width: 50vw;
+    max-width: 850px;
+    padding: 110px 50px 50px;
+
+    border-left: 1px solid rgba(227, 6, 19, 0.15);
+    box-shadow: -5px 0 25px rgba(0, 0, 0, 0.12);
+  }
+
+  #menu > ul > li > a {
+    font-size: clamp(3rem, 4vw, 5rem);
+  }
+
+  .submenu {
+    margin-left: 1rem;
+  }
+
+  .submenu a {
+    font-size: 1.5rem;
+  }
+}
