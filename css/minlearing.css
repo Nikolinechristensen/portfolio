@@ -2,6 +2,40 @@
   padding-bottom: 2rem;
   border-bottom: 1px solid #000000;
 }
+/* ---------- TEMA NAV ---------- */
+
+.tema-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  border-bottom: 1px solid #000000;
+}
+
+.tema-nav a {
+  flex: 1;
+  color: #e30613;
+  text-decoration: none;
+
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-align: center;
+
+  padding: 0.4rem 0;
+
+  transition: all 0.2s ease;
+}
+
+.tema-nav a:hover {
+  font-style: italic;
+  transform: translateY(-2px);
+}
 
 .tema {
   padding-bottom: 2rem;
@@ -112,6 +146,13 @@
   }
   .minlearing p {
     padding-bottom: 6rem;
+  }
+  .tema-nav {
+    gap: 0;
+  }
+
+  .tema-nav a {
+    font-size: 1.8rem;
   }
   .tema {
     display: grid;
