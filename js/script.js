@@ -5,6 +5,6 @@ function toggleMenu() {
   if (menu.classList.contains("active")) {
     burger.innerHTML = "✕";
   } else {
-    burger.innerHTML = "menu +";
+    burger.innerHTML = "MENU +";
   }
 }
